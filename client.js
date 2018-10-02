@@ -10,11 +10,3 @@ web.chat.postMessage({ channel: conversationId, text: 'Hello there' })
     // `res` contains information about the posted message
     console.log('Message sent: ', res.ts);
 })["catch"](console.error);
-
-
-web.channels.list()
-  .then((res) => {
-    // `res` contains information about the channels
-    res.channels.forEach(c => console.log(c.name));
-  })
-  .catch(console.error);

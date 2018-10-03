@@ -4,7 +4,7 @@ const app = express();
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true })); 
 
-app.set('port', process.env.PORT || 8086);
+app.set('port', process.env.PORT || 8908);
 
 
 var WebClient = require('@slack/client').WebClient;
